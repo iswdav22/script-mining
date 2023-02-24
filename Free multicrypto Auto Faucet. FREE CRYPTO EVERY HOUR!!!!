@@ -1,0 +1,37 @@
+// ==UserScript==
+// @name Free multicrypto Auto Faucet. FREE CRYPTO EVERY HOUR!!!!
+// @description Auto Faucet Script. Get free STEAM TETHER USD coin BINANCE coin NEO DASH BITCOIN NEM CARDANO ETHEREUM LITECOIN RIPPLE TRON CHAINLINK DOGE coin EVERY HOUR!!!!!
+// @author Butterlvr6
+// @version 3
+// @namespace hi
+// @match https://freesteam.io/free
+// @match https://freetether.com/free
+// @match https://freeusdcoin.com/free
+// @match https://freebinancecoin.com/free
+// @match https://freeneo.io/free
+// @match https://freedash.io/free
+// @match https://freebitcoin.io/free
+// @match https://freenem.com/free
+// @match https://freecardano.com/free
+// @match https://freeethereum.com/free
+// @match https://free-ltc.com/free
+// @match https://coinfaucet.io/free
+// @match https://free-tron.com/free
+// @match https://freechainlink.io/free
+// @match https://free-doge.com/free
+// @grant GM_setValue
+// @grant GM_getValue
+// ==/UserScript==
+
+
+setTimeout(function() {
+    'use strict';
+    console.log(document.querySelector("div[class='roll-wrapper']").style.display !== 'none');
+
+    if (document.querySelector("div[class='roll-wrapper']").style.display !== "none") {
+        document.querySelector("button[class='main-button-2 roll-button bg-2']").click()
+    }
+    //every 10 minutes the page will be refreshed to check if you can roll again
+    setTimeout(function(){ location.reload(); }, 10*60*1000);
+
+},2000);
