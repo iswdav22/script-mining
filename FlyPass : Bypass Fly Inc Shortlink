@@ -1,0 +1,69 @@
+// ==UserScript==
+// @name         FlyPass : Bypass Fly Inc Shortlink
+// @namespace    http://tampermonkey.net/
+// @version      2.0.4
+// @description  Bypasses ALL "Fly Inc" shortlinks (:
+// @author       Xeryiar (LgamerLIVE)
+// @license      GNU GPLv3
+// @match        https://thumb9.net/*
+// @match        https://shinbhu.net/*
+// @match        https://crewus.net/*
+// @match        https://crewbase.net/*
+// @match        https://topcryptoz.net/*
+// @match        https://allcryptoz.net/*
+// @match        https://ultraten.net/*
+// @match        https://uniqueten.net/*
+// @match        https://thumb8.net/*
+// @match        https://shinchu.net/*
+// @grant        none
+// ==/UserScript==
+//
+// FlyPass v2 | Created by LgamerLIVE. The original script was made entirely by me.
+//
+// PLEASE READ BEFORE YOU USE MY SCRIPT.
+//
+// First of all, thank you for installing my script. I am working hard on my scripts and services and would appreciate any donations.
+// This script took me months (including the API) to create, so please do not steal it.
+// By using our service, you agree to our TOS: https://api.xeryiar.gq/terms.txt
+//
+// Support & Community: https://discord.gg/kdJRYBrXcb
+// ===============================================================================================================================================
+// 🛠 Configuration
+//
+// BypassTimer
+// The BypassTimer can be used if the website uses an anti-bypass plugin. Most of the websites allow 20 seconds, so I recommend using that instead.
+// The value is in milliseconds
+//
+   var BypassTimer = "20000" // For example, 20000.
+//
+// Whitelist
+// You can visit https://api.xeryiar.gq/key/keygen.php to get a 3 day long IP whitelist for one device.
+//
+// ===============================================================================================================================================
+// Enjoy using the script and happy bypassing!
+// ===============================================================================================================================================
+
+var flid = getCookie("flid");
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+if(window.location.href.indexOf("get") > -1) {
+window.location = "https://anhautobot.com/api/bypass/?name=https://anhautobot.com/api/bypass/api/?url=" + window.location.href + "&timer=" + BypassTimer
+}
+else {
+    window.location = "https://anhautobot.com/api/bypass/?name=https://anhautobot.com/api/bypass/api/?url=https://" + window.location.hostname + "/backup/w/?get=" + flid + "&timer=" + BypassTimer
+}
