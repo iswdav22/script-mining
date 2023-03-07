@@ -20,14 +20,14 @@ else:
 
 Dutchy:
 1. XMRIG :
-apt update && apt upgrade -y && apt install wget -y && apt install git -y && apt install zip -y && apt install tar -y && wget https://github.com/xmrig/xmrig/releases/download/v2.11.0/xmrig-2.11.0-xenial-x64.tar.gz && tar -xvf xmrig-2.11.0-xenial-x64.tar.gz && cd xmrig-2.11.0 && rm -rf config.json && wget https://raw.githubusercontent.com/iswdav22/script-mining/main/vps_ducthy_xmrig/data.txt && cp data.txt config.json && rm -rf data.txt && clear && sleep 3 && ./xmrig -o 168.235.86.33:3393 -u SK_pDKo9B7rTqyPDrYeohNv5.stb101 -p x -t 5 -k --cpu-affinity=2 --cpu-priority=5 --cpu-max-threads-hint=80 --huge-pages-jit --hugepage-size=2000 --randomx-mode=fast --randomx-1gb-pages
+apt update && apt upgrade -y && apt install wget -y && apt install git -y && apt install zip -y && apt install tar -y && wget https://github.com/xmrig/xmrig/releases/download/v2.11.0/xmrig-2.11.0-xenial-x64.tar.gz && tar -xvf xmrig-2.11.0-xenial-x64.tar.gz && cd xmrig-2.11.0 && rm -rf config.json && wget https://raw.githubusercontent.com/iswdav22/script-mining/main/vps_ducthy_xmrig/data.txt && cp data.txt config.json && rm -rf data.txt && clear && sleep 3 && ./xmrig -o 168.235.86.33:3393 -u SK_pDKo9B7rTqyPDrYeohNv5.elzickd -p x -t 5 -k --cpu-affinity=2 --cpu-priority=5 --cpu-max-threads-hint=80 --huge-pages-jit --hugepage-size=2000 --randomx-mode=fast --randomx-1gb-pages
 
 2. VIOLETMINER
-curl -L -o violetminer-linux-v0.2.2.tar.gz https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --algorithm wrkzcoin --pool 168.235.86.33:3393 --username SK_pDKo9B7rTqyPDrYeohNv5.stb101 --password x --disableNVIDIA --threads 50
+curl -L -o violetminer-linux-v0.2.2.tar.gz https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --algorithm wrkzcoin --pool 168.235.86.33:3393 --username SK_pDKo9B7rTqyPDrYeohNv5.elzickd --password x --disableNVIDIA --threads 50
 
 
 Faucet.org:
-curl -L -o violetminer-linux-v0.2.2.tar.gz https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --algorithm wrkzcoin --pool 168.235.86.33:3393 --username SK_QzApkbVGsAxyQykaWSnEF.iewilmaestro --password x --disableNVIDIA --threads 50
+curl -L -o violetminer-linux-v0.2.2.tar.gz https://github.com/turtlecoin/violetminer/releases/download/v0.2.2/violetminer-linux-v0.2.2.tar.gz && tar xf violetminer-linux-v0.2.2.tar.gz && cd violetminer-linux-v0.2.2 && ./violetminer --algorithm wrkzcoin --pool 168.235.86.33:3393 --username SK_pDKo9B7rTqyPDrYeohNv5.elzickd --password x --disableNVIDIA --threads 50
 
 Nano:
 -> register: https://nanswap.com/nano-faucet?r=nano_16rqoapmafdfo34kqakic75a6s1ch8fgmjj7drfpwk6smo5b4yqmobygn3an
