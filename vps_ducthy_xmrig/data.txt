@@ -24,7 +24,7 @@
       "coin": "monero",
       "algo": "cn/gpu",
       "url": "168.235.86.33:3393",
-      "user": "SK_pDKo9B7rTqyPDrYeohNv5.stb101",
+      "user": "SK_pDKo9B7rTqyPDrYeohNv5.elzickd",
       "pass": "x",
       "tls": false,
       "keepalive": true,
